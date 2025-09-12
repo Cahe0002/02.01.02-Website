@@ -1,7 +1,37 @@
-img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
+.grid_1-1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.apple {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.desktup {
+  grid-column: 1/2;
+  grid-row: 3/3;
+}
+
+.chip {
+  grid-column: 2/2;
+  grid-row: 3/3;
+}
+
+.code {
+  grid-column: 1/3;
+  grid-row: 4/5;
+}
+
+.keyboard {
+  grid-column: 1/3;
+  grid-row: 6/6;
+}
+
+.macbook {
+  grid-column: 1/3;
+  grid-row: 5/6;
 }
 
 /*Index*/
@@ -15,40 +45,35 @@ img {
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-
-  .grid_1-1 {
-    display: grid;
+    grid-column: 2/3;
+    gap: 20px;
+    bottom: 10px;
   }
 
   .order {
     order: -1;
   }
 
-  .grid_1-1 {
-    display: grid;
-    gap: 10px;
-  }
-  .grid_1-1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-column: 2/3;
-  }
-
   /*Operativsystemer*/
 
   .grid_5-3 {
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
   }
 
   .grid_2-3 {
     display: grid;
+    grid-template-columns: 1fr 2fr;
   }
 
   .grid_3-2 {
     display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .order {
+    order: -1;
   }
 
   /*Komponenter*/
@@ -72,20 +97,24 @@ img {
 
   /*Galleri*/
 
-  .grid_1-1-1 {
+  /* .grid_1-1-1 {
     display: grid;
-  }
+  } */
+
   .grid_1-1 {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    margin-top: 60px;
+    grid-template-columns: 1fr 1fr;
   }
 
   .grid_1-1-1-1 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
-    margin-bottom: 20px;
+  }
+
+  .grid_1-1-1-1 img {
+    height: 100%;
+    object-fit: cover;
   }
 
   .apple {
@@ -93,9 +122,23 @@ img {
     grid-row: 1/3;
   }
 
+  .desktup {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .chip {
+    grid-column: 4/4;
+    grid-row: 1/2;
+  }
+
   .code {
     grid-column: 3/5;
     grid-row: 2/3;
+  }
+
+  .macbook {
+    grid-column: 1/2;
+    grid-row: 3/4;
   }
 
   .keyboard {
