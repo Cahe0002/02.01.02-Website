@@ -73,14 +73,21 @@ p {
   font-family: Helvetica, Arial, sans-serif;
   line-height: 20px;
   margin-bottom: 20px;
+  font-size: 16px;
 }
 
-ul {
+.menu {
   list-style-type: none;
   font-family: Helvetica, Arial, sans-serif;
   display: flex;
   gap: 8px;
   justify-content: center;
+}
+
+.specifikationer {
+  font-family: Helvetica, Arial, sans-serif;
+  margin-left: 15px;
+  line-height: 30px;
 }
 
 dl {
@@ -161,6 +168,6 @@ nav {
 @media screen and (max-width: 800px) {
   .menu {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 }
