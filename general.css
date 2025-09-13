@@ -30,6 +30,18 @@ body {
   margin-top: 50px;
 }
 
+.computer {
+  margin-top: 50px;
+}
+
+.computer_tekst {
+  margin-top: 50px;
+}
+
+.tablet {
+  margin-top: 10px;
+}
+
 a {
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -87,7 +99,7 @@ p {
 .specifikationer {
   font-family: Helvetica, Arial, sans-serif;
   margin-left: 15px;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 dl {
@@ -120,11 +132,12 @@ header {
   position: sticky;
   top: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 20px;
+  justify-content: space-between;
+  padding: 10px 20px;
   background-color: #c1e1c1;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
 .logo img {
@@ -133,23 +146,17 @@ header {
 }
 
 nav {
+  flex-grow: 1;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 .menu {
   display: flex;
+  gap: 20px;
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.menu li {
-  margin-right: 20px;
-}
-
-.menu li:last-child {
-  margin-right: 0;
 }
 
 .menu a {
@@ -158,16 +165,19 @@ nav {
   color: #000000;
   text-decoration: none;
   transition: color 0.3s;
-  text-align: end;
 }
-
 .menu a:hover {
   color: #ffffff;
 }
 
 @media screen and (max-width: 800px) {
+  nav {
+    justify-content: center;
+  }
+
   .menu {
-    display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 }
