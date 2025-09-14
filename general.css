@@ -321,7 +321,7 @@ nav {
   .menu {
     flex-direction: row;
     position: relative;
-    font-size: 12px;
+    font-size: 11px;
     align-items: center;
     gap: 1px;
     margin-right: 10px;
