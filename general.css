@@ -320,9 +320,9 @@ nav {
 
   .menu {
     flex-direction: row;
-    font-size: 12.5px;
+    font-size: 12px;
     align-items: end;
-    gap: 10px;
+    gap: 2px;
   }
 
   .logo img {
