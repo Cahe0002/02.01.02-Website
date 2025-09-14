@@ -321,7 +321,7 @@ nav {
   .menu {
     flex-direction: row;
     position: sticky;
-    font-size: 7px;
+    font-size: 7.2px;
     align-items: center;
     gap: 2px;
   }
