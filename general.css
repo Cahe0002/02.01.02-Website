@@ -223,19 +223,19 @@ p {
 dl {
   background-color: #ececec;
   font-family: Helvetica, Arial, sans-serif;
-  padding-bottom: 0.1rem;
-  margin-bottom: 20px;
 }
 
 dd {
   background-color: #ececec;
-  padding: 5px;
+  border: 20px;
+  padding: 10px;
   margin: 0px;
 }
 
 dt {
   background-color: #ffffff;
-  padding: 8px;
+  border: 20px;
+  padding: 10px;
   margin: 0px;
 }
 
@@ -250,7 +250,7 @@ dt {
   dd {
     background-color: #ececec;
     padding: 5px;
-    margin: 0px;
+    margin: 4px;
   }
 
   dt {
