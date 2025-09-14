@@ -22,9 +22,17 @@ body {
   margin: 0 auto;
 }
 
+/* Galleri */
+
 .tekst_galleri {
   max-width: 65ch;
 }
+
+.grid_1-1-1-1 img {
+  border-radius: 15px;
+}
+
+/* Index */
 
 .forside_bund {
   margin-top: 50px;
@@ -34,12 +42,108 @@ body {
   margin-top: 50px;
 }
 
+.tekst_1-1 {
+  margin-left: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .tekst_1-1 {
+    margin: 0 auto;
+  }
+}
+
+/* Min computer */
+
 .computer_tekst {
   margin-top: 50px;
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .computer_tekst {
+    margin: 0 auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  /* Specific button styling */
+  a.mincomputerknap {
+    display: inline-block;
+    background-color: #c1e1c1;
+    color: black;
+    border-radius: 15px;
+    padding: 12px;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-bottom: 50px;
+  }
+
+  a.mincomputerknap:hover {
+    background-color: #000000;
+    color: white;
+  }
+}
+
+/* Komponenter */
+
+.komponenter {
+  margin-top: 10px;
+}
+
+.køling {
+  margin-top: 10px;
+}
+
+.motherboard {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .grid_1-1-1 img {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .grid_1-1-1 img:first-of-type {
+    margin-top: 0;
+  }
+}
+
+/* Operativsystemer */
+
+.se_videre {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+img.push-down {
+  margin-top: 218px;
 }
 
 .tablet {
-  margin-top: 10px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  img.push-down {
+    margin: 0 auto;
+  }
+
+  .grid_5-3 img {
+    margin-bottom: 20px;
+  }
+
+  .grid_5-3 img:first-of-type {
+    margin-top: 0;
+  }
+
+  .tablet {
+    margin: 0 auto;
+  }
 }
 
 /* General link styling */
@@ -68,7 +172,7 @@ a.mincomputerknap:hover {
 h1 {
   color: rgb(0, 0, 0);
   font-family: "Kode Mono", monospace;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 h2 {
@@ -119,7 +223,8 @@ dd {
 
 dt {
   background-color: #ffffff;
-  padding: 5px;
+  padding: 8px;
+  border-radius: 15px;
   margin: 0px;
 }
 
@@ -174,12 +279,13 @@ nav {
 
 @media screen and (max-width: 800px) {
   nav {
-    justify-content: center;
+    display: block;
   }
 
   .menu {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    font-size: 9px;
+    align-items: end;
     gap: 10px;
   }
 }
