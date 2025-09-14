@@ -63,7 +63,7 @@ body {
 .computer {
   position: relative;
   top: -20px;
-} /* Moves image up */
+}
 
 @media screen and (max-width: 800px) {
   .computer_tekst {
@@ -84,7 +84,6 @@ body {
     border-radius: 10px;
   }
 
-  /* Specific button styling */
   a.mincomputerknap {
     display: inline-block;
     background-color: #a0bed8;
@@ -162,14 +161,12 @@ img.push-down {
   }
 }
 
-/* General link styling */
 a {
   text-decoration: none;
   color: white;
   font-weight: bold;
 }
 
-/* Specific button styling */
 a.mincomputerknap {
   display: inline-block;
   background-color: #a0bed8;
