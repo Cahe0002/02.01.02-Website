@@ -320,7 +320,7 @@ nav {
 
   .menu {
     flex-direction: row;
-    font-size: 8px;
+    font-size: 2px;
     align-items: center;
     gap: 2px;
   }
