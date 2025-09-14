@@ -28,8 +28,10 @@ body {
   max-width: 65ch;
 }
 
-.grid_1-1-1-1 img {
-  border-radius: 15px;
+@media screen and (max-width: 800px) {
+  .grid_1-1-1-1 img {
+    border-radius: 10px;
+  }
 }
 
 /* Index */
@@ -58,10 +60,22 @@ body {
   margin-top: 50px;
   margin-left: 50px;
 }
+.computer {
+  position: relative;
+  top: -20px;
+} /* Moves image up */
 
 @media screen and (max-width: 800px) {
   .computer_tekst {
     margin: 0 auto;
+  }
+  .computer_tekst {
+    margin-left: 50px;
+  }
+
+  .computer {
+    position: relative;
+    top: -40px;
   }
 
   a {
@@ -70,12 +84,16 @@ body {
     font-weight: bold;
   }
 
+  .grid_1-1 img {
+    border-radius: 10px;
+  }
+
   /* Specific button styling */
   a.mincomputerknap {
     display: inline-block;
-    background-color: #c1e1c1;
-    color: black;
+    background-color: #a0bed8;
     border-radius: 15px;
+    color: black;
     padding: 12px;
     font-family: Helvetica, Arial, sans-serif;
     margin-bottom: 50px;
@@ -105,6 +123,7 @@ body {
   .grid_1-1-1 img {
     margin-bottom: 20px;
     margin-top: 20px;
+    border-radius: 10px;
   }
 
   .grid_1-1-1 img:first-of-type {
@@ -135,6 +154,7 @@ img.push-down {
 
   .grid_5-3 img {
     margin-bottom: 20px;
+    border-radius: 10px;
   }
 
   .grid_5-3 img:first-of-type {
@@ -156,12 +176,11 @@ a {
 /* Specific button styling */
 a.mincomputerknap {
   display: inline-block;
-  background-color: #c1e1c1;
+  background-color: #a0bed8;
   color: black;
-  border-radius: 15px;
   padding: 12px;
   font-family: Helvetica, Arial, sans-serif;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 a.mincomputerknap:hover {
@@ -224,12 +243,33 @@ dd {
 dt {
   background-color: #ffffff;
   padding: 8px;
-  border-radius: 15px;
   margin: 0px;
 }
 
+@media screen and (max-width: 800px) {
+  dl {
+    background-color: #ececec;
+    font-family: Helvetica, Arial, sans-serif;
+    padding-bottom: 0.1rem;
+    margin-bottom: 20px;
+  }
+
+  dd {
+    background-color: #ececec;
+    padding: 5px;
+    margin: 0px;
+  }
+
+  dt {
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 20px;
+    margin: 0px;
+  }
+}
+
 footer {
-  background-color: #c1e1c1;
+  background-color: #a0bed8;
   text-align: center;
   font-family: Helvetica, Arial, sans-serif;
   padding: 30px;
@@ -242,14 +282,16 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: #c1e1c1;
+  background-color: #a0bed8;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
 
 .logo img {
-  width: 50px;
-  height: 50px;
+  width: 38px;
+  height: 38px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 nav {
@@ -284,8 +326,15 @@ nav {
 
   .menu {
     flex-direction: row;
-    font-size: 9px;
+    font-size: 12.5px;
     align-items: end;
     gap: 10px;
+  }
+
+  .logo img {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
